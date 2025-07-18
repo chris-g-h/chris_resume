@@ -7,6 +7,9 @@ body {
 }
 
 #content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     max-width: 800px;
     margin: auto;
     background: #3B4252;
@@ -17,6 +20,23 @@ body {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 0.3s;
+}
+
+#avatar-box {
+    width: 120px;
+    margin: 20px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -45,10 +65,21 @@ h2 {
 .value a {
     color: #007acc;
     text-decoration: none;
+    /* animation: pulseColor 3s ease-in-out infinite alternate; */
+    transition: all .3s;
+    display: inline-block;
 }
 
 .value a:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 12px;
 }
 
 /* 动画关键帧 */
