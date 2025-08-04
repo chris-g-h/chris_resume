@@ -1,33 +1,35 @@
 const fileNames = [
-    "tljd1.36(onLine)-transientHidden.apk",
-    "tljd1.36(onLine)-tabbarLogoChange.apk",
-    "tljd1.36(onLine)-tabbarButtonShow.apk",
-    "tljd1.36(onLine)-logoChange.apk.apk",
-    "tljd1.36(onLine)-interfaceOptimize.apk",
-    "tljd1.36(onLine)-initTime.apk",
-    "tljd1.36(onLine)-ignoreRemind.apk",
-    "tljd1.36(onLine)-hiddenChangePassword.apk",
-    "tljd1.36(onLine)-endTimeAhead.apk",
-    "tljd1.36(4.225)-transientHidden.apk",
-    "tljd1.36(4.225)-logoChange.apk",
-    "tljd1.36(4.225)-initTime.apk",
-    "tljd1.36(1.50)-cancelConvertTime.apk",
-    "tljd1.35(onLine)-twoWayControl.apk",
-    "tljd1.35(4.225).apk",
-    "tljd1.35(4.225)-twoWayControl.apk",
-    "tljd1.35(4.225)-resetTypeSetting.apk",
-    "tljd1.35(4.225)-detailTask.apk",
-    "tljd1.3-onLine.apk",
-    "tljd1.3(4.225).apk",
-    "tljd1.3(4.225 ).apk",
-    "tljd1.2(9.205).apk",
-    "tljd1.2(4.225).apk",
-    "tljd1.1-onLine.apk",
-    "tljd1.1(4.225).apk",
-    "tljd1.0-onLine(form).apk",
-    "tljd1.0(9.205).apk"
-  ];
-  
+  "tljd1.36(onLine)-transientHidden.zip",
+  "tljd1.36(onLine)-tabbarLogoChange.zip",
+  "tljd1.36(onLine)-tabbarButtonShow.zip",
+  "tljd1.36(onLine)-logoChange.apk.zip",
+  "tljd1.36(onLine)-interfaceOptimize.zip",
+  "tljd1.36(onLine)-initTime.zip",
+  "tljd1.36(onLine)-ignoreRemind.zip",
+  "tljd1.36(onLine)-hiddenChangePassword.zip",
+  "tljd1.36(onLine)-endTimeAhead.zip",
+  "tljd1.36(onLine)-coverButton.zip",
+  "tljd1.36(4.225)-transientHidden.zip",
+  "tljd1.36(4.225)-logoChange.zip",
+  "tljd1.36(4.225)-initTime.zip",
+  "tljd1.36(1.50)-cancelConvertTime.zip",
+  "tljd1.35(onLine)-twoWayControl.zip",
+  "tljd1.35(4.225)-twoWayControl.zip",
+  "tljd1.35(4.225)-resetTypeSetting.zip",
+  "tljd1.35(4.225)-detailTask.zip",
+  "tljd1.35(4.225).zip",
+  "tljd1.3-onLine.zip",
+  "tljd1.3(4.225).zip",
+  "tljd1.3(4.225 ).zip",
+  "tljd1.2(9.205).zip",
+  "tljd1.2(4.225).zip",
+  "tljd1.1-onLine.zip",
+  "tljd1.1(4.225).zip",
+  "tljd1.0-onLine(form).zip",
+  "tljd1.0(9.205).zip"
+];
+
+
 // 弹窗相关元素
 const modal = document.getElementById("password-modal");
 const openBtn = document.getElementById("show-modal-btn");
@@ -65,9 +67,11 @@ confirmBtn.addEventListener("click", () => {
 // 渲染下载文件列表
 function renderDownloadList() {
   fileList.innerHTML = "";
-  fileNames.forEach(file => {
+  const downloadUrl =
+    "https://chris-g-h.github.io/chris_resume/public/downloads/";
+  fileNames.forEach((file) => {
     const li = document.createElement("li");
-    li.innerHTML = `<a href="https://chris-g-h.github.io/chris_resume/public/downloads/${file}" download>${file}</a>`;
+    li.innerHTML = `<a href="${downloadUrl}${file}" download>${file}</a>`;
     fileList.appendChild(li);
   });
   downloadList.classList.remove("hidden");
