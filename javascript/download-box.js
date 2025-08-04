@@ -67,7 +67,7 @@ function renderDownloadList() {
   fileList.innerHTML = "";
   fileNames.forEach(file => {
     const li = document.createElement("li");
-    li.innerHTML = `<a href="/downloads/${file}" download>${file}</a>`;
+    li.innerHTML = `<a href="https://chris-g-h.github.io/chris_resume/downloads/${file}" download>${file}</a>`;
     fileList.appendChild(li);
   });
   downloadList.classList.remove("hidden");
