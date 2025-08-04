@@ -6,6 +6,7 @@
     <title>Chris Resume</title>
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/resume.css" />
+    <link rel="stylesheet" href="./css/download-box.css" />
   </head>
   <body>
     <div id="content">
@@ -17,7 +18,30 @@
         <img id="avatar-img" src="./images/lyfGao.jpeg" alt="头像" />
       </div>
     </div>
+    <div id="content">
+      <button id="show-modal-btn" class="download-btn">下载文件</button>
+    </div>
+
+    <!-- 密码弹窗组件 -->
+    <div id="password-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>请输入密码</h3>
+        <input type="password" id="password-input" placeholder="请输入密码" />
+        <div class="modal-actions">
+          <button id="confirm-password-btn">确定</button>
+          <button id="close-modal-btn">取消</button>
+        </div>
+        <p id="error-msg" class="error-msg"></p>
+      </div>
+    </div>
+
+    <!-- 下载列表组件 -->
+    <div id="download-list" class="hidden">
+      <h3>📁 可下载文件：</h3>
+      <ul id="file-list"></ul>
+    </div>
 
     <script src="./javascript/resume.js"></script>
+    <script src="./javascript/download-box.js"></script>
   </body>
 </html>

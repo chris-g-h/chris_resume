@@ -12,6 +12,7 @@ body {
     justify-content: space-between;
     max-width: 800px;
     margin: auto;
+    margin-top: 20px;
     background: #3B4252;
     padding: 20px 30px;
     border-radius: 10px;
