@@ -54,7 +54,7 @@ closeBtn.addEventListener("click", () => {
 // 验证密码
 confirmBtn.addEventListener("click", () => {
   const password = passwordInput.value.trim();
-  if (password === "123456") {
+  if (password === "yhsoft123") {
     modal.classList.add("hidden");
     renderDownloadList();
   } else {
@@ -67,7 +67,7 @@ function renderDownloadList() {
   fileList.innerHTML = "";
   fileNames.forEach(file => {
     const li = document.createElement("li");
-    li.innerHTML = `<a href="downloads/${file}" download>${file}</a>`;
+    li.innerHTML = `<a href="/downloads/${file}" download>${file}</a>`;
     fileList.appendChild(li);
   });
   downloadList.classList.remove("hidden");
