@@ -1,4 +1,5 @@
 const fileNames = [
+  "tljd1.36(onLine)-coverButton.zip",
   "tljd1.36(onLine)-transientHidden.zip",
   "tljd1.36(onLine)-tabbarLogoChange.zip",
   "tljd1.36(onLine)-tabbarButtonShow.zip",
@@ -8,7 +9,6 @@ const fileNames = [
   "tljd1.36(onLine)-ignoreRemind.zip",
   "tljd1.36(onLine)-hiddenChangePassword.zip",
   "tljd1.36(onLine)-endTimeAhead.zip",
-  "tljd1.36(onLine)-coverButton.zip",
   "tljd1.36(4.225)-transientHidden.zip",
   "tljd1.36(4.225)-logoChange.zip",
   "tljd1.36(4.225)-initTime.zip",
