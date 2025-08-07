@@ -9,24 +9,10 @@ const fileNames = [
   "tljd1.36(onLine)-ignoreRemind.zip",
   "tljd1.36(onLine)-hiddenChangePassword.zip",
   "tljd1.36(onLine)-endTimeAhead.zip",
-  "tljd1.36(4.225)-transientHidden.zip",
-  "tljd1.36(4.225)-logoChange.zip",
-  "tljd1.36(4.225)-initTime.zip",
-  "tljd1.36(1.50)-cancelConvertTime.zip",
   "tljd1.35(onLine)-twoWayControl.zip",
-  "tljd1.35(4.225)-twoWayControl.zip",
-  "tljd1.35(4.225)-resetTypeSetting.zip",
-  "tljd1.35(4.225)-detailTask.zip",
-  "tljd1.35(4.225).zip",
   "tljd1.3-onLine.zip",
-  "tljd1.3(4.225).zip",
-  "tljd1.3(4.225 ).zip",
-  "tljd1.2(9.205).zip",
-  "tljd1.2(4.225).zip",
   "tljd1.1-onLine.zip",
-  "tljd1.1(4.225).zip",
   "tljd1.0-onLine(form).zip",
-  "tljd1.0(9.205).zip"
 ];
 
 
