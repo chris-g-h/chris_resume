@@ -1,4 +1,5 @@
 const fileNames = [
+  "tljd1.36(onLine)-finalVersion.zip",
   "tljd1.36(onLine)-coverButton.zip",
   "tljd1.36(onLine)-transientHidden.zip",
   "tljd1.36(onLine)-tabbarLogoChange.zip",
